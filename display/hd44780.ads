@@ -52,6 +52,14 @@ package HD44780 is
    
    ---------------------------------------------------------
    --
+   -- Print string S on the display at position S at line L 
+   --
+   ---------------------------------------------------------      
+   procedure Print_String_Position(S : String; L : Line; Pos : Position);
+   
+   
+   ---------------------------------------------------------
+   --
    -- Set cursor mode (BLINK, NO_BLINK, OFF)    
    --
    ---------------------------------------------------------      

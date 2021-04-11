@@ -20,14 +20,23 @@ with HD44780;
 
 procedure Main is
    S : constant String := "Hello Ada Pi   World! :)";   
+   I : Integer := 0;
    
 begin      
    -- Examples of usage of the interface:
-   HD44780.Init(HD44780.Bits_8_Lines_2_Dots_5x7);
+   HD44780.Init(HD44780.Bits_4_Lines_2_Dots_5x7);
    HD44780.Set_Cursor_Position(1, 5);
    HD44780.Shift_Cursor_Right(6);   
    HD44780.Home;   
    HD44780.Clear;         
    HD44780.Set_Cursor_Mode(HD44780.BLINK);      
-   HD44780.Print_String(S);   
+   
+   HD44780.Print_String(S);
+   loop
+      exit when I = 10;
+      delay 1.0;
+      HD44780.Print_String_Position(Integer'Image(I),2,10);
+      I := I + 1;
+   end loop;
+
 end Main;

@@ -280,6 +280,21 @@ package body HD44780 is
    
    ---------------------------------------------------------
    --
+   -- Print string S on the display at position S at line L 
+   --
+   ---------------------------------------------------------      
+   procedure Print_String_Position(S : String; L : Line; Pos : Position) is 
+      
+   begin
+      Set_Cursor_Position(L,Pos);
+      for I in S'First .. S'Last loop
+         Write_Data(Character'Pos(S(I)));
+      end loop;      
+   end Print_String_Position;   
+   
+   
+   ---------------------------------------------------------
+   --
    -- Set cursor mode (BLINK, NO_BLINK, OFF) 
    --
    ---------------------------------------------------------      
