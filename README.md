@@ -4,7 +4,7 @@ Ada Interface for Raspberry Pi for controlling a Hitachi HD44780 (2 lines of 16 
 
 
 ## Hardware:
-* Raspberry Pi 3 Model BH v1.2
+* Raspberry Pi 3 Model B v1.2
 * Hitachi HD44780 2x16 5x7 LCD display
 
 ## Wiring:
