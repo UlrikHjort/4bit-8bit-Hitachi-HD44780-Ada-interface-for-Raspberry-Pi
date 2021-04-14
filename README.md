@@ -1,6 +1,6 @@
 # 4bit/8bit Hitachi HD44780 Ada interface for Raspberry Pi
 
-Ada Interface for Raspberry Pi for controlling a Hitachi HD780 (2 lines of 16 5*7 characters) display.
+Ada Interface for Raspberry Pi for controlling a Hitachi HD44780 (2 lines of 16 5*7 characters) display.
 
 
 ## Hardware:
